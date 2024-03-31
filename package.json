@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && shx mkdir -p dist/components/button/css/ && shx mkdir -p dist/components/loader/css/ && shx cp src/components/button/css/button.css dist/components/button/css/ && shx cp src/components/loader/css/loader.css dist/components/loader/css/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -15,10 +15,14 @@
     "kit",
     "component",
     "react ui kit",
-    "Stian Larsen"
+    "Stian Larsen",
+    "react ui",
+    "react kit"
   ],
   "author": "Stian Larsen",
   "license": "ISC",
+  "repository": "https://github.com/Stianlars1/react-ui-kit",
+  "homepage": "https://react-ui-kit.app",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
