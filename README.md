@@ -60,22 +60,23 @@ Add the variables below to your `global.css` ( or equivalent stylesheet ) ro cus
   --button-border: 240 5.9% 90%;
   --button-padding: 0.75rem 1.25rem;
   --button-line-height: 1;
+
   --button-background: 0 0% 100%;
   --button-foreground: 240 10% 3.9%;
+
   --button-primary: 263.4 70% 50.4%;
-  --button-primary-hover: var(--button-primary) / 0.75;
   --button-primary-foreground: 210 20% 98%;
+
   --button-default: 240 5.9% 10%;
-  --button-default-hover: var(--button-default) / 0.75;
   --button-default-foreground: 0 0% 98%;
+
   --button-destructive: 0 72.22% 50.59%;
-  --button-destructive-hover: var(--button-destructive) / 0.75;
   --button-destructive-foreground: 0 0% 98%;
+
   --button-secondary: 240 4.8% 95.9%;
-  --button-secondary-hover: var(--button-secondary) / 0.75;
   --button-secondary-foreground: 240 5.9% 10%;
+
   --button-accent: 240 4.8% 95.9%;
-  --button-accent-hover: var(--button-accent) / 0.75;
   --button-accent-foreground: 240 5.9% 10%;
 }
 
@@ -84,22 +85,23 @@ Add the variables below to your `global.css` ( or equivalent stylesheet ) ro cus
   :root {
     --button-radius: 0.5rem;
     --button-border: 240 3.7% 15.9%;
+
     --button-background: 240 10% 3.9%;
     --button-foreground: 0 0% 98%;
+
     --button-primary: 263.4 70% 50.4%;
-    --button-primary-hover: var(--button-primary) / 0.85;
     --button-primary-foreground: 210 20% 98%;
+
     --button-default: 0 0% 98%;
-    --button-default-hover: var(--button-default) / 0.85;
     --button-default-foreground: 240 5.9% 10%;
+
     --button-destructive: 0 62.8% 30.6%;
-    --button-destructive-hover: var(--button-destructive) / 0.75;
     --button-destructive-foreground: 0 85.7% 97.3%;
+
     --button-secondary: 240 3.7% 15.9%;
-    --button-secondary-hover: var(--button-secondary) / 0.8;
     --button-secondary-foreground: 0 0% 98%;
+
     --button-accent: 240 3.7% 15.9%;
-    --button-accent-hover: var(--button-accent) / 0.8;
     --button-accent-foreground: 0 0% 98%;
   }
 }
