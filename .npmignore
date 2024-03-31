@@ -1,0 +1,15 @@
+# Source files
+src/
+
+# TypeScript files
+**/*.ts
+**/*.tsx
+
+# Other unnecessary files
+node_modules/
+*.log
+*.tsbuildinfo
+
+# configuration files
+tsconfig.json
+.npmignore

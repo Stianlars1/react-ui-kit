@@ -1,0 +1,31 @@
+{
+  "name": "@stianlarsen/react-ui-kit",
+  "version": "1.0.3",
+  "description": "A versatile React UI kit focused on delivering ready-to-use, customizable buttons for every use case. Designed to save developers time and streamline UI development, this kit offers a range of button styles and loaders, ensuring immediate integration and thematic coherence across projects.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "React",
+    "ui",
+    "button",
+    "kit",
+    "component",
+    "react ui kit",
+    "Stian Larsen"
+  ],
+  "author": "Stian Larsen",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.73",
+    "@types/react-dom": "^18.2.23",
+    "typescript": "^5.4.3"
+  }
+}
