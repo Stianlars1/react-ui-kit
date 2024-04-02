@@ -151,4 +151,4 @@ For any questions or suggestions, feel free to reach out.
 
 - GitHub: [@stianlars1](https://github.com/stianlars1)
 - Website: [https://stianlarsen.com](https://stianlarsen.com)
-- Email[stian.larsen@mac.com](mailto:stian.larsen@mac.com)
+- Email [stian.larsen@mac.com](mailto:stian.larsen@mac.com)
