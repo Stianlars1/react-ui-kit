@@ -143,7 +143,7 @@ Contributions are always welcome! Please contact me for further info.
 
 ## License
 
-This project is licensed under the MIT License.
+`@stianlarsen/react-ui-kit` is [MIT licensed](./LICENSE).
 
 ## Contact
 
