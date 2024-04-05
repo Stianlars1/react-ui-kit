@@ -4,6 +4,7 @@ src/
 # TypeScript files
 **/*.ts
 **/*.tsx
+!**/*.d.ts
 
 # Other unnecessary files
 node_modules/

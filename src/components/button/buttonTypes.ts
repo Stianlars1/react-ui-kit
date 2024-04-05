@@ -6,7 +6,8 @@ export type ButtonType =
   | "secondary"
   | "link"
   | "ghost"
-  | "outline";
+  | "outline"
+  | "icon";
 
 export interface BaseProps {
   width?: "fit-content" | "100%" | "auto" | "max-content" | "min-content";
@@ -19,7 +20,7 @@ export interface BaseProps {
 export interface ButtonVariantProps
   extends ButtonHTMLAttributes<HTMLButtonElement>,
     BaseProps {
-  variant?: Exclude<ButtonType, "link">;
+  variant?: Exclude<ButtonType, "link" | "icon">;
 }
 
 // Enhanced link variant props allowing optional href if onClick is provided
@@ -39,8 +40,26 @@ export interface LinkVariantPropsWithOnClick
   href?: never; // Make href explicitly never here to avoid confusion
 }
 
+// Enhanced icon variant props allowing optional href if onClick is provided
+export interface IconVariantPropsWithHref
+  extends AnchorHTMLAttributes<HTMLAnchorElement>,
+    BaseProps {
+  variant: "icon";
+  href: string;
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+}
+export interface IconVariantPropsWithOnClick
+  extends AnchorHTMLAttributes<HTMLAnchorElement>,
+    BaseProps {
+  variant: "icon";
+  href?: string;
+  onClick: React.MouseEventHandler<HTMLAnchorElement>;
+}
+
 // Union type for component props, including the new link variant options
 export type ButtonProps =
   | ButtonVariantProps
   | LinkVariantPropsWithHref
-  | LinkVariantPropsWithOnClick;
+  | LinkVariantPropsWithOnClick
+  | IconVariantPropsWithHref
+  | IconVariantPropsWithOnClick;

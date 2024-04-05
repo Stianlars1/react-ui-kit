@@ -3,6 +3,8 @@ import { Loader } from "../loader/loader";
 import {
   ButtonProps,
   ButtonVariantProps,
+  IconVariantPropsWithHref,
+  IconVariantPropsWithOnClick,
   LinkVariantPropsWithHref,
   LinkVariantPropsWithOnClick,
 } from "./buttonTypes";
@@ -20,7 +22,8 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
     ...rest
   } = props;
 
-  const isLink = variant === "link";
+  // link or icon variant
+  const isLink = variant === "link" || variant === "icon";
   const classNames = getButtonClasses(variant, className, loading);
 
   // Separate props for button and link to avoid passing invalid props
@@ -33,7 +36,10 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
   if (isLink) {
     const { href, onClick, ...linkProps } = rest as
       | LinkVariantPropsWithHref
-      | LinkVariantPropsWithOnClick;
+      | LinkVariantPropsWithOnClick
+      | IconVariantPropsWithHref
+      | IconVariantPropsWithOnClick;
+
     // Prioritize onClick over href if both are provided
     const linkHandler = onClick
       ? (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {

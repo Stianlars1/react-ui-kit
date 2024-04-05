@@ -1,5 +1,5 @@
 import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
-export type ButtonType = "default" | "primary" | "secondary" | "link" | "ghost" | "outline";
+export type ButtonType = "default" | "primary" | "secondary" | "link" | "ghost" | "outline" | "icon";
 export interface BaseProps {
     width?: "fit-content" | "100%" | "auto" | "max-content" | "min-content";
     loading?: boolean;
@@ -7,7 +7,7 @@ export interface BaseProps {
     loadingText?: string;
 }
 export interface ButtonVariantProps extends ButtonHTMLAttributes<HTMLButtonElement>, BaseProps {
-    variant?: Exclude<ButtonType, "link">;
+    variant?: Exclude<ButtonType, "link" | "icon">;
 }
 export interface LinkVariantPropsWithHref extends AnchorHTMLAttributes<HTMLAnchorElement>, BaseProps {
     variant: "link";
@@ -19,4 +19,14 @@ export interface LinkVariantPropsWithOnClick extends AnchorHTMLAttributes<HTMLAn
     onClick: React.MouseEventHandler<HTMLAnchorElement>;
     href?: never;
 }
-export type ButtonProps = ButtonVariantProps | LinkVariantPropsWithHref | LinkVariantPropsWithOnClick;
+export interface IconVariantPropsWithHref extends AnchorHTMLAttributes<HTMLAnchorElement>, BaseProps {
+    variant: "icon";
+    href: string;
+    onClick?: React.MouseEventHandler<HTMLAnchorElement>;
+}
+export interface IconVariantPropsWithOnClick extends AnchorHTMLAttributes<HTMLAnchorElement>, BaseProps {
+    variant: "icon";
+    href?: string;
+    onClick: React.MouseEventHandler<HTMLAnchorElement>;
+}
+export type ButtonProps = ButtonVariantProps | LinkVariantPropsWithHref | LinkVariantPropsWithOnClick | IconVariantPropsWithHref | IconVariantPropsWithOnClick;

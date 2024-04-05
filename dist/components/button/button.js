@@ -4,7 +4,8 @@ import "./css/button.css";
 import { getButtonClasses } from "./utils/utils";
 export const Button = (props) => {
     const { children, width = "fit-content", className = "", loading = false, loadingText = "Vennligst vent", variant = "default", ...rest } = props;
-    const isLink = variant === "link";
+    // link or icon variant
+    const isLink = variant === "link" || variant === "icon";
     const classNames = getButtonClasses(variant, className, loading);
     // Separate props for button and link to avoid passing invalid props
     const commonProps = {

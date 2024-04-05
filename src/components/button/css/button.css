@@ -131,6 +131,29 @@
   text-decoration: underline;
 }
 
+.button--icon {
+  color: hsl(var(--button-foreground));
+  box-shadow: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.65rem;
+  background-color: transparent;
+  overflow: hidden;
+}
+.button--icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button--icon svg {
+  fill: hsl(var(--foreground));
+  transition: all 0.2s ease;
+}
+.button--icon:hover {
+  background-color: hsl(var(--muted)/0.75);
+}
+
 .button--outline {
   border: 1px solid hsl(var(--button-border));
   background-color: hsl(var(--button-background));
