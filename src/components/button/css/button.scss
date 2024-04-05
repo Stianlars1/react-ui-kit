@@ -1,59 +1,64 @@
 /* ==  light mode == **/
 :root {
   // theme
-  --button-radius: 0.5rem;
-  --button-border: 240 5.9% 90%;
-  --button-padding: 0.75rem 1.25rem;
-  --button-line-height: 1;
+  --radius: 0.5rem;
+  --border: 240 5.9% 90%;
+  --padding: 0.75rem 1.25rem;
+  --line-height: 1;
 
-  --button-background: 0 0% 100%;
-  --button-foreground: 240 10% 3.9%;
+  --background: 0 0% 100%;
+  --foreground: 240 10% 3.9%;
 
-  --button-primary: 263.4 70% 50.4%;
-  --button-primary-foreground: 210 20% 98%;
+  --primary: 263.4 70% 50.4%;
+  --primary-foreground: 210 20% 98%;
 
-  --button-default: 240 5.9% 10%;
-  --button-default-foreground: 0 0% 98%;
+  --default: 240 5.9% 10%;
+  --default-foreground: 0 0% 98%;
 
-  --button-destructive: 0 72.22% 50.59%;
-  --button-destructive-foreground: 0 0% 98%;
+  --destructive: 0 72.22% 50.59%;
+  --destructive-foreground: 0 0% 98%;
 
-  --button-secondary: 240 4.8% 95.9%;
-  --button-secondary-foreground: 240 5.9% 10%;
+  --secondary: 240 4.8% 95.9%;
+  --secondary-foreground: 240 5.9% 10%;
 
-  --button-accent: 240 4.8% 95.9%;
-  --button-accent-foreground: 240 5.9% 10%;
+  --accent: 240 4.8% 95.9%;
+  --accent-foreground: 240 5.9% 10%;
+
+  --muted: 240 4.8% 95.9%;
+  --muted-foreground: 240 3.8% 46.1%;
 }
 
 /* ==   dark mode  == */
 @media (prefers-color-scheme: dark) {
   :root {
-    --button-radius: 0.5rem;
-    --button-border: 240 3.7% 15.9%;
+    --border: 240 3.7% 15.9%;
 
-    --button-background: 240 10% 3.9%;
-    --button-foreground: 0 0% 98%;
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
 
-    --button-primary: 263.4 70% 50.4%;
-    --button-primary-foreground: 210 20% 98%;
+    --primary: 263.4 70% 50.4%;
+    --primary-foreground: 210 20% 98%;
 
-    --button-default: 0 0% 98%;
-    --button-default-foreground: 240 5.9% 10%;
+    --default: 0 0% 98%;
+    --default-foreground: 240 5.9% 10%;
 
-    --button-destructive: 0 62.8% 30.6%;
-    --button-destructive-foreground: 0 85.7% 97.3%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
 
-    --button-secondary: 240 3.7% 15.9%;
-    --button-secondary-foreground: 0 0% 98%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
 
-    --button-accent: 240 3.7% 15.9%;
-    --button-accent-foreground: 0 0% 98%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
   }
 }
 
 .button {
   margin: 0;
-  padding: var(--button-padding);
+  padding: var(--padding);
   cursor: pointer;
 
   display: inline-flex;
@@ -68,12 +73,12 @@
   white-space: nowrap;
   font-weight: 500;
   font-size: 0.875rem;
-  line-height: var(--button-line-height);
+  line-height: var(--line-height);
   text-transform: none;
   font-family: inherit;
 
-  border-radius: calc(var(--button-radius) - 2px);
-  color: hsl(var(--button-foreground));
+  border-radius: calc(var(--radius) - 2px);
+  color: hsl(var(--foreground));
 
   transition: scale 0.15s ease-in-out;
   transition-property: color, background-color, border-color,
@@ -84,7 +89,7 @@
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
   &:focus-visible {
-    border-color: hsl(var(--button-border));
+    border-color: hsl(var(--border));
   }
 
   &:disabled {
@@ -108,53 +113,53 @@
 }
 
 .button--primary {
-  background-color: hsl(var(--button-primary));
-  color: hsl(var(--button-primary-foreground));
+  background-color: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
   &:hover {
-    background-color: hsl(var(--button-primary) / 0.75);
+    background-color: hsl(var(--primary) / 0.75);
   }
 }
 
 .button--default {
-  background-color: hsl(var(--button-default));
-  color: hsl(var(--button-default-foreground));
+  background-color: hsl(var(--default));
+  color: hsl(var(--default-foreground));
   &:hover {
-    background-color: hsl(var(--button-default) / 0.8);
+    background-color: hsl(var(--default) / 0.8);
   }
 }
 
 .button--destructive {
-  background-color: hsl(var(--button-destructive));
-  color: hsl(var(--button-destructive-foreground));
+  background-color: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: hsl(var(--button-destructive) / 0.75);
+    background-color: hsl(var(--destructive) / 0.75);
   }
 }
 
 .button--secondary {
-  background-color: hsl(var(--button-secondary));
-  color: hsl(var(--button-secondary-foreground));
+  background-color: hsl(var(--secondary));
+  color: hsl(var(--secondary-foreground));
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
 
   &:hover {
-    background-color: hsl(var(--button-secondary) / 0.8);
+    background-color: hsl(var(--secondary) / 0.8);
   }
 }
 
 .button--ghost {
   background-color: transparent;
-  color: hsl(var(--button-accent-foreground));
+  color: hsl(var(--accent-foreground));
   box-shadow: none;
 
   &:hover {
-    background-color: hsl(var(--button-accent) / 0.8);
+    background-color: hsl(var(--accent) / 0.8);
   }
 }
 
 .button--link {
-  color: hsl(var(--button-foreground));
+  color: hsl(var(--foreground));
   text-underline-offset: 4px;
   box-shadow: none;
 
@@ -164,7 +169,7 @@
 }
 
 .button--icon {
-  color: hsl(var(--button-foreground));
+  color: hsl(var(--foreground));
   box-shadow: none;
 
   display: flex;
@@ -194,13 +199,13 @@
 }
 
 .button--outline {
-  border: 1px solid hsl(var(--button-border));
-  background-color: hsl(var(--button-background));
-  color: hsl(var(--button-foreground));
+  border: 1px solid hsl(var(--border));
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
   box-shadow: none;
 
   &:hover {
-    background-color: hsl(var(--button-accent));
-    color: hsl(var(--button-accent-foreground));
+    background-color: hsl(var(--accent));
+    color: hsl(var(--accent-foreground));
   }
 }
