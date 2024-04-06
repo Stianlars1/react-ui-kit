@@ -7,17 +7,19 @@ export const SimpleCard = ({
   title,
   description,
   icon,
-  href,
+  href = undefined,
   onClick,
   width,
+  chevron,
 }: SimpleCardProps) => {
   const Icon = icon ? getIcon(icon) : undefined;
   if (href) {
+    const showChevron = chevron === undefined ? true : chevron;
     return (
       <a
         href={href}
         className="simple-card simple-card-clickable"
-        onClick={onClick}
+        onClick={() => onClick && onClick()}
         style={{ width: width }}
       >
         {Icon !== undefined && (
@@ -31,9 +33,11 @@ export const SimpleCard = ({
           )}
         </div>
 
-        <div className="simple-card__linkIcon">
-          <IconChevron />
-        </div>
+        {showChevron && (
+          <div className="simple-card__linkIcon">
+            <IconChevron />
+          </div>
+        )}
       </a>
     );
   }
@@ -44,6 +48,7 @@ export const SimpleCard = ({
         onClick !== undefined ? "simple-card-clickable" : ""
       }`}
       onClick={() => onClick && onClick()}
+      style={{ width: width }}
     >
       {Icon !== undefined && (
         <div className="simple-card__icon-wrapper">{Icon}</div>
@@ -55,6 +60,12 @@ export const SimpleCard = ({
           <p className="simple-card__content__description">{description}</p>
         )}
       </div>
+
+      {chevron && (
+        <div className="simple-card__linkIcon">
+          <IconChevron />
+        </div>
+      )}
     </div>
   );
 };

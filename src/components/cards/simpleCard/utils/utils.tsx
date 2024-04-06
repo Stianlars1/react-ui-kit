@@ -1,5 +1,4 @@
 export const getIcon = (icon: string | React.ReactNode) => {
-  console.log("icon", icon);
   if (typeof icon === "string") {
     return <img src={icon} alt="icon" />;
   }

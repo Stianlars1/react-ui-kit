@@ -4,5 +4,6 @@ export type SimpleCardProps = {
   icon?: string | React.ReactNode;
   href?: string;
   width?: "fit-content" | "100%";
+  chevron?: boolean | undefined;
   onClick?: () => void;
 };
