@@ -46,6 +46,7 @@ export interface IconVariantPropsWithHref
     BaseProps {
   variant: "icon";
   href: string;
+  border?: boolean;
   onClick?: React.MouseEventHandler<HTMLAnchorElement>;
 }
 export interface IconVariantPropsWithOnClick
@@ -53,6 +54,7 @@ export interface IconVariantPropsWithOnClick
     BaseProps {
   variant: "icon";
   href?: string;
+  border?: boolean;
   onClick: React.MouseEventHandler<HTMLAnchorElement>;
 }
 

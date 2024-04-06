@@ -157,6 +157,10 @@
   background-color: hsl(var(--muted)/0.75);
 }
 
+.button--icon-border {
+  border: 1px solid hsl(var(--muted)/0.75);
+}
+
 .button--outline {
   border: 1px solid hsl(var(--border));
   background-color: hsl(var(--background));

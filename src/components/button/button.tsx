@@ -24,7 +24,7 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
 
   // link or icon variant
   const isLink = variant === "link" || variant === "icon";
-  const classNames = getButtonClasses(variant, className, loading);
+  const classNames = getButtonClasses(variant, className, loading, rest);
 
   // Separate props for button and link to avoid passing invalid props
   const commonProps = {
