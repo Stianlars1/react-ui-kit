@@ -24,8 +24,15 @@
     svg {
       width: 1.5rem;
       height: 1.5rem;
-      stroke-width: 0;
-      border: none;
+    }
+
+    svg {
+      path {
+        stroke-width: 1px;
+        stroke: hsl(var(--muted-foreground) / 0.8);
+        border: none;
+        fill: transparent;
+      }
     }
   }
 
