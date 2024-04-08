@@ -1,6 +1,6 @@
 .loader {
   border: 4px solid rgba(0, 0, 0, 0.2);
-  border-left-color: hsl(var(--primary)), #7983ff;
+  border-left-color: hsl(var(--primary, #7983ff, rgb(255, 255, 255)));
   border-radius: 50%;
   animation: spin 1s linear infinite;
 }

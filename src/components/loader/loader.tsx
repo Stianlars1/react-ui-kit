@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import "./css/loader.css";
+import "../../styles/global.css";
 import { LoaderType } from "./loaderTypes";
 export const Loader: React.FC<LoaderType> = ({
   widthAndHeight,
