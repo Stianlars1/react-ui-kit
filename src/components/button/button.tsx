@@ -40,6 +40,10 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
       | IconVariantPropsWithHref
       | IconVariantPropsWithOnClick;
 
+    const { border, ...finalProps } = linkProps as typeof linkProps & {
+      border?: any;
+    };
+
     // Prioritize onClick over href if both are provided
     const linkHandler = onClick
       ? (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
@@ -49,7 +53,7 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
       : undefined;
 
     return (
-      <a {...commonProps} href={href} onClick={linkHandler} {...linkProps}>
+      <a {...commonProps} href={href} onClick={linkHandler} {...finalProps}>
         {loading ? (
           <span className="isLoading">
             <Loader />
