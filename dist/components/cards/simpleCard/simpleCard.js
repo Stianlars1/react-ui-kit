@@ -1,5 +1,6 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
 import { IconChevron } from "../../../assets/icons/icons";
+import "../../../styles/global.css";
 import "./css/simpleCard.css";
 import { getIcon } from "./utils/utils";
 export const SimpleCard = ({ title, description, icon, href = undefined, onClick, width, chevron, }) => {

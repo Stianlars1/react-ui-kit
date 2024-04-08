@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && shx mkdir -p dist/components/button/css/ && shx mkdir -p dist/components/loader/css/ && shx mkdir -p dist/components/cards/simpleCard/css/ && shx cp src/components/button/css/button.css dist/components/button/css/ && shx cp src/components/loader/css/loader.css dist/components/loader/css/ && shx cp src/components/cards/simpleCard/css/simpleCard.css dist/components/cards/simpleCard/css/",
+    "build": "tsc && shx mkdir -p dist/styles/ && shx mkdir -p dist/components/button/css/ && shx mkdir -p dist/components/loader/css/ && shx mkdir -p dist/components/cards/simpleCard/css/ && shx cp src/components/button/css/button.css dist/components/button/css/ && shx cp src/components/loader/css/loader.css dist/components/loader/css/ && shx cp src/components/cards/simpleCard/css/simpleCard.css dist/components/cards/simpleCard/css/ && shx cp src/styles/global.css dist/styles/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

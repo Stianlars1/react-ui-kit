@@ -1,4 +1,5 @@
 import { IconChevron } from "../../../assets/icons/icons";
+import "../../../styles/global.css";
 import "./css/simpleCard.css";
 import { SimpleCardProps } from "./types/simpleCardTypes";
 import { getIcon } from "./utils/utils";
