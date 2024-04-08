@@ -42,7 +42,7 @@
     align-items: flex-start;
     justify-content: center;
     &__title {
-      color: hsl(var(--foreground));
+      color: hsl(var(--foreground) / 0.87);
       font-size: 0.975rem;
     }
 

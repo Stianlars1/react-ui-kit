@@ -36,7 +36,7 @@
   justify-content: center;
 }
 .simple-card__content__title {
-  color: hsl(var(--foreground));
+  color: hsl(var(--foreground)/0.87);
   font-size: 0.975rem;
 }
 .simple-card__content__description {
