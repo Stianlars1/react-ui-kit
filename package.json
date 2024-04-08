@@ -1,6 +1,6 @@
 {
   "name": "@stianlarsen/react-ui-kit",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "A versatile React UI kit focused on delivering ready-to-use, customizable buttons for every use case. Designed to save developers time and streamline UI development, this kit offers a range of button styles and loaders, ensuring immediate integration and thematic coherence across projects.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
