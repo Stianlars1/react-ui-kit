@@ -15,6 +15,7 @@ export const Button = (props) => {
     };
     if (isLink) {
         const { href, onClick, ...linkProps } = rest;
+        const { border, ...finalProps } = linkProps;
         // Prioritize onClick over href if both are provided
         const linkHandler = onClick
             ? (e) => {
@@ -22,7 +23,7 @@ export const Button = (props) => {
                 onClick(e);
             }
             : undefined;
-        return (_jsx("a", { ...commonProps, href: href, onClick: linkHandler, ...linkProps, children: loading ? (_jsxs("span", { className: "isLoading", children: [_jsx(Loader, {}), loadingText] })) : (children) }));
+        return (_jsx("a", { ...commonProps, href: href, onClick: linkHandler, ...finalProps, children: loading ? (_jsxs("span", { className: "isLoading", children: [_jsx(Loader, {}), loadingText] })) : (children) }));
     }
     else {
         const { disabled, ...buttonProps } = rest;
