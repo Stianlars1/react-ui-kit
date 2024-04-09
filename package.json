@@ -22,7 +22,7 @@
   "author": "Stian Larsen",
   "license": "MIT",
   "repository": "https://github.com/Stianlars1/react-ui-kit",
-  "homepage": "https://react-ui-kit.app",
+  "homepage": "https://react-ui-kit.dev",
   "peerDependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"

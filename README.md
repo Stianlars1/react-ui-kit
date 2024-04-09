@@ -2,6 +2,8 @@
 
 A versatile React UI kit focused on delivering ready-to-use, customizable buttons for every use case. Designed to save developers time and streamline UI development, this kit offers a range of button styles and loaders, ensuring immediate integration and thematic coherence across projects.
 
+**Check out the [website](https://react-ui-kit.dev) for demo's, examples, and further info.**
+
 ## Features
 
 - **Customizable Button Components**: Easily adaptable button components for various use cases including primary, secondary, destructive, and loading states.
