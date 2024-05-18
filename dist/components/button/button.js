@@ -10,7 +10,7 @@ export const Button = (props) => {
     const classNames = getButtonClasses(variant, className, loading, rest);
     // Separate props for button and link to avoid passing invalid props
     const commonProps = {
-        className: `${classNames} ui-kit`, // Apply the ui-kit class here
+        className: `${classNames} `, // Apply the ui-kit class here
         style: { width },
         "aria-disabled": loading ? true : undefined,
     };
