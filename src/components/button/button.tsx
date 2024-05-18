@@ -1,4 +1,5 @@
 import { ReactElement } from "react";
+import "../../styles/global.css";
 import { Loader } from "../loader/loader";
 import {
   ButtonProps,
@@ -9,7 +10,6 @@ import {
   LinkVariantPropsWithOnClick,
 } from "./buttonTypes";
 import "./css/button.css";
-import "../../styles/global.css";
 import { getButtonClasses } from "./utils/utils";
 
 export const Button: React.FC<ButtonProps> = (props): ReactElement => {
@@ -29,7 +29,7 @@ export const Button: React.FC<ButtonProps> = (props): ReactElement => {
 
   // Separate props for button and link to avoid passing invalid props
   const commonProps = {
-    className: classNames,
+    className: `${classNames} ui-kit`, // Apply the ui-kit class here
     style: { width },
     "aria-disabled": loading ? true : undefined,
   };
