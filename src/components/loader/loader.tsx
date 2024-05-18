@@ -7,7 +7,5 @@ export const Loader: React.FC<LoaderType> = ({
 }): ReactElement => {
   const width = widthAndHeight || "1em";
 
-  return (
-    <div className="loader ui-kit" style={{ width: width, height: width }} />
-  );
+  return <div className="loader " style={{ width: width, height: width }} />;
 };

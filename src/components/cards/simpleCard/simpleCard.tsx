@@ -19,7 +19,7 @@ export const SimpleCard = ({
     return (
       <a
         href={href}
-        className="simple-card simple-card-clickable ui-kit"
+        className="simple-card simple-card-clickable"
         onClick={() => onClick && onClick()}
         style={{ width: width }}
       >
@@ -45,7 +45,7 @@ export const SimpleCard = ({
 
   return (
     <div
-      className={`simple-card ui-kit ${
+      className={`simple-card  ${
         onClick !== undefined ? "simple-card-clickable" : ""
       }`}
       onClick={() => onClick && onClick()}
