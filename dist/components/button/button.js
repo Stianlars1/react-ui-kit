@@ -1,7 +1,7 @@
 import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import "../../styles/global.css";
 import { Loader } from "../loader/loader";
 import "./css/button.css";
-import "../../styles/global.css";
 import { getButtonClasses } from "./utils/utils";
 export const Button = (props) => {
     const { children, width = "fit-content", className = "", loading = false, loadingText = "Vennligst vent", variant = "default", ...rest } = props;
@@ -10,7 +10,7 @@ export const Button = (props) => {
     const classNames = getButtonClasses(variant, className, loading, rest);
     // Separate props for button and link to avoid passing invalid props
     const commonProps = {
-        className: classNames,
+        className: `${classNames} ui-kit`, // Apply the ui-kit class here
         style: { width },
         "aria-disabled": loading ? true : undefined,
     };

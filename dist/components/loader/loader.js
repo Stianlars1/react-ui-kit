@@ -1,8 +1,7 @@
 import { jsx as _jsx } from "react/jsx-runtime";
-import "./css/loader.css";
 import "../../styles/global.css";
+import "./css/loader.css";
 export const Loader = ({ widthAndHeight, }) => {
-    const width = widthAndHeight || 24;
-    const widthAndHeightInPixels = `${width}px`;
-    return (_jsx("div", { className: "loader", style: { width: widthAndHeightInPixels, height: widthAndHeightInPixels } }));
+    const width = widthAndHeight || "1em";
+    return (_jsx("div", { className: "loader ui-kit", style: { width: width, height: width } }));
 };
