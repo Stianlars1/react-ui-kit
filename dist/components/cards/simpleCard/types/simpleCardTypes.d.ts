@@ -1,4 +1,3 @@
-/// <reference types="react" />
 export type SimpleCardProps = {
     title: string;
     description?: string;

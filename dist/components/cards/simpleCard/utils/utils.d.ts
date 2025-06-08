@@ -1,2 +1,1 @@
-/// <reference types="react" />
-export declare const getIcon: (icon: string | React.ReactNode) => number | boolean | Iterable<import("react").ReactNode> | import("react/jsx-runtime").JSX.Element;
+export declare const getIcon: (icon: string | React.ReactNode) => number | bigint | boolean | Iterable<import("react").ReactNode> | Promise<string | number | bigint | boolean | import("react").ReactElement<unknown, string | import("react").JSXElementConstructor<any>> | import("react").ReactPortal | Iterable<import("react").ReactNode>> | import("react/jsx-runtime").JSX.Element;

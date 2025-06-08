@@ -1,4 +1,3 @@
-/// <reference types="react" />
 import "../../styles/global.css";
 import { ButtonProps } from "./buttonTypes";
 import "./css/button.css";
