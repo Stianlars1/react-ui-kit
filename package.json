@@ -23,14 +23,18 @@
   "license": "MIT",
   "repository": "https://github.com/Stianlars1/react-ui-kit",
   "homepage": "https://react-ui-kit.dev",
-  "peerDependencies": {
+  "Dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
+  "peerDependencies": {
+    "react": "^18 || ^19",
+    "react-dom": "^18 || ^19"
+  },
   "devDependencies": {
-    "@types/react": "^18.2.73",
-    "@types/react-dom": "^18.2.23",
-    "typescript": "^5.4.3",
-    "shx": "^0.3.4"
+    "@types/react": "^18 || ^19",
+    "@types/react-dom": "^18 || ^19",
+    "typescript": "^5.8.3",
+    "shx": "^0.4.0"
   }
 }

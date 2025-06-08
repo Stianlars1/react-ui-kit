@@ -38,6 +38,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  width: inherit;
+  height: inherit;
 }
 
 .button--primary {
@@ -128,4 +130,6 @@
 .button--outline:hover {
   background-color: hsl(var(--accent));
   color: hsl(var(--accent-foreground));
-}/*# sourceMappingURL=button.css.map */
+}
+
+/*# sourceMappingURL=button.css.map */
